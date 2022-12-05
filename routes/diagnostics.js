@@ -9,15 +9,14 @@ diagnostics.get('/', (req, res) => {
 
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
-  console.log(req.body)
   const { tip, topic, username } = req.body
   const diagnosticLog = {
     time: Math.floor(Date.now() / 1000),
     error_id: uuidv4(),
     errors: { tip, topic, username }
   }
+  readAndAppend(diagnosticLog, './db/diagnostics.json')
   res.json(diagnosticLog)
-  // TODO: Logic for appending data to the db/diagnostics.json file
 });
 
 module.exports = diagnostics;
