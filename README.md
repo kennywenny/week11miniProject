@@ -12,12 +12,6 @@ In this mini-project, you will work with a group to add routes to an existing ap
 
 ## Acceptance Criteria
 
-* It's done when I have created a `fetch()` request on the front end that will send a POST request to `/api/diagnostics` every time a user attempts to submit an invalid form.
-
-* It's done when I have tested my `/api/diagnostics` endpoint using Insomnia.
-
-* It's done when I have tested the wildcard route by visiting any non-existent path, like `http://localhost/test`.
-
 * It's done when I have deployed the finished application to Heroku.
 
 ---
