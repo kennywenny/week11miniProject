@@ -34,5 +34,14 @@
             "topic": "TOPIC TEST",
             "username": "Junk name"
         }
+    },
+    {
+        "time": 1670273807,
+        "error_id": "01fe1b50-67e4-4820-9fb5-dfac31444b0e",
+        "errors": {
+            "tip": "Tip must be at least 15 characters",
+            "topic": "",
+            "username": "Invalid username!"
+        }
     }
 ]
