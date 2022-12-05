@@ -9,6 +9,12 @@ diagnostics.get('/', (req, res) => {
 
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
+  console.log(req.body)
+  const { tip, topic, username } = req.body
+  const diagnosticLog = {
+    errors: { tip, topic, username }
+  }
+  res.json(diagnosticLog)
   // TODO: Logic for appending data to the db/diagnostics.json file
 });
 

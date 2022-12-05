@@ -18,7 +18,7 @@ In this mini-project, you will work with a group to add routes to an existing ap
 
 * It's done when I have created a POST route for `/api/diagnostics` that will store information about the invalid form submissions.
 
-* It's done when I have created a GET route for `/api/diagnostics` that will return the content of `db/diagnostics/json`.
+* It's done when I have created a GET route for `/api/diagnostics` that will return the content of `db/diagnostics.json`.
 
 * It's done when I have created a `fetch()` request on the front end that will send a POST request to `/api/diagnostics` every time a user attempts to submit an invalid form.
 
