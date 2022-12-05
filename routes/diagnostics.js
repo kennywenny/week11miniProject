@@ -3,7 +3,10 @@ const { v4: uuidv4 } = require('uuid');
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 // GET Route for retrieving diagnostic information
-diagnostics.get('/', (req, res) => {
+diagnostics.get('/', async (req, res) => {
+  const contents = await readFromFile('./db/diagnostics.json')
+  const logs = JSON.parse(contents.toString())
+  res.json(logs)
   // TODO: Logic for sending all the content of db/diagnostics.json
 });
 
