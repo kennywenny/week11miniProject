@@ -13,6 +13,7 @@ diagnostics.post('/', (req, res) => {
   const { tip, topic, username } = req.body
   const diagnosticLog = {
     time: Math.floor(Date.now() / 1000),
+    error_id: uuidv4(),
     errors: { tip, topic, username }
   }
   res.json(diagnosticLog)
